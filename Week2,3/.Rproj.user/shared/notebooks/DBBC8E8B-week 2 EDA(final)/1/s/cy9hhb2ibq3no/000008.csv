@@ -1,0 +1,6 @@
+"0","combined %>% mutate(income_class = case_when(.$income < 3300 ~ ""low"","
+"0","                                             .$income >= 3300 & .$income < 10000 ~ ""middle"","
+"0","                                             .$income > 10000 ~ ""high"")) %>% mutate(year = case_when(.$date >= ""2016-01-01"" & combined$date <= ""2016-12-31"" ~ 2016, "
+"0","                                                                                                     .$date >= ""2017-01-01"" & combined$date <= ""2017-12-31"" ~ 2017,                                                                .$date >= ""2018-01-01"" & combined$date <= ""2018-12-31"" ~ 2018)) %>% na.omit() %>% group_by(income_class, Company) %>% summarize(mean(profit))"
+"2","`summarise()` has grouped output by 'income_class'. You can override using the `.groups` argument.
+"

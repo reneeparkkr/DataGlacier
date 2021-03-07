@@ -1,0 +1,10 @@
+"0","library(StanHeaders)"
+"0","library(prophet)"
+"0","pred <- combined %>% group_by(date) %>% summarize(profits = sum(profit))"
+"0","pred <- pred %>% mutate(ds = pred$date, y = pred$profits)"
+"0","model <- prophet(pred)"
+"2","Disabling daily seasonality. Run prophet with daily.seasonality=TRUE to override this.
+"
+"0","future <- make_future_dataframe(model, periods = 365)"
+"0","forecast <- predict(model, future)"
+"0","dyplot.prophet(model,forecast)"

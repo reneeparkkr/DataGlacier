@@ -1,0 +1,6 @@
+"0","options(digits = 3)"
+"0","combined %>% mutate(age_group = case_when(.$Age >=10 & .$Age <20 ~ ""10s"","
+"0","                                   .$Age >=20 & .$Age <30 ~ ""20s"","
+"0","                                   .$Age >=30 & .$Age <40 ~ ""30s"","
+"0","                                   .$Age >=40 & .$Age <50 ~ ""40s"","
+"0","                                   .$Age >=50 & .$Age <60 ~ ""60s"",)) %>% na.omit() %>% group_by(age_group) %>% summarize(Yellow = mean(Company == ""Yellow Cab""), Pink = mean(Company == ""Pink Cab""))"

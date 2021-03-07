@@ -1,0 +1,4 @@
+"0","arr_price <- combined %>% group_by(City) %>% summarise(price = mean(price)) %>% arrange(-price)"
+"0","combined$City <- factor(combined$City, levels = arr_price$City)"
+"0","combined %>% na.omit() %>% group_by(City) %>% summarise(avg_price = mean(price)) %>% ggplot(aes(City, avg_price,fill = City)) +geom_col() +theme(axis.text.x=element_text(angle = 90)) + theme(legend.position=""none"")"
+"0",""

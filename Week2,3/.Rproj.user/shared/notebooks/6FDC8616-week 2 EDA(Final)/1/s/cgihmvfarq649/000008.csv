@@ -1,0 +1,1 @@
+"0","combined %>% group_by(Gender) %>% na.omit() %>% summarize(card = mean(Payment_Mode == ""Card""), cash = mean(Payment_Mode == ""Cash""))"

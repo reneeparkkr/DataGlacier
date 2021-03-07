@@ -1,0 +1,1 @@
+"0","combined %>% na.omit() %>% group_by(Gender) %>% summarize(Yellow = mean(Company == ""Yellow Cab""), Pink = mean(Company == ""Pink Cab""))"

@@ -1,0 +1,1 @@
+"0","freq %>% filter(n > 10) %>% ggplot(aes(Company,n,color = Company)) + geom_count()"

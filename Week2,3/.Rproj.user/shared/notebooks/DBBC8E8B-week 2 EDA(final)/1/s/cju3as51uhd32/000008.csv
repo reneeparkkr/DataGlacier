@@ -1,0 +1,5 @@
+"0","Weather_rides <- combined_weather %>% na.omit() %>% group_by(Type) %>% summarize(rides = n())"
+"0","joined_weather <- full_join(Weather_rides, Weather_type)"
+"2","Joining, by = ""Type""
+"
+"0","joined_weather"

@@ -1,0 +1,7 @@
+"0",""
+"0","price_index <- combined %>% na.omit() %>% group_by(City) %>% summarise(avg_price = mean(price))"
+"0","price_index <- full_join(price_index, cost_index)"
+"2","Joining, by = ""City""
+"
+"0","price_index$City <- factor(price_index$City, levels = arr_price$City)"
+"0","price_index %>% ggplot() + geom_col(aes(City,avg_price, fill = City)) + geom_point(aes(City, Cost_Index)) + theme(axis.text.x=element_text(angle=90)) + theme(legend.position=""none"") + geom_hline(yintercept = mean(price_index$Cost_Index,na.rm = TRUE),linetype=""dashed"")"

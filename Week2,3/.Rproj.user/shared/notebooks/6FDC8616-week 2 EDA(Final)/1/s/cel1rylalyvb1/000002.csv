@@ -1,0 +1,6 @@
+"0","freq <- combined %>% mutate(year = case_when(.$date >= ""2016-01-01"" & combined$date <= ""2016-12-31"" ~ 2016,"
+"0","                                     .$date >= ""2017-01-01"" & combined$date <= ""2017-12-31"" ~ 2017,"
+"0","                                     .$date >= ""2018-01-01"" & combined$date <= ""2018-12-31"" ~ 2018))%>% na.omit() %>% group_by(Company,year,customer_id) %>% summarise(n=n()) %>% arrange(-n)"
+"2","`summarise()` has grouped output by 'Company', 'year'. You can override using the `.groups` argument.
+"
+"0","freq"
