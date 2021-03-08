@@ -1,2 +1,0 @@
-"0","combined %>% mutate(pf_km = combined$profit/combined$kms) %>% na.omit() %>% group_by("
-"0","  Company) %>% summarize(avg_profit_km = mean(pf_km))"

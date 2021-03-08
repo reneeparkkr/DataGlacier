@@ -1,3 +1,0 @@
-"0","arr_count<- combined %>% group_by(City) %>% summarise(n=n()) %>% arrange(-n) "
-"0","combined$City <- factor(combined$City, levels = arr_count$City)"
-"0","combined %>% na.omit() %>% ggplot() + geom_bar(aes(x=City, fill = Company)) +theme(axis.text.x = element_text(angle=90)) + ylab(""number of rides"")"

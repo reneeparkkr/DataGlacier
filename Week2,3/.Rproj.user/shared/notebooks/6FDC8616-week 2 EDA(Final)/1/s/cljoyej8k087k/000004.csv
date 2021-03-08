@@ -1,4 +1,0 @@
-"0",""
-"0","arr <- combined %>% group_by(City) %>% summarise(profits = sum(profit)) %>% arrange(-profits)"
-"0","combined$City <- factor(combined$City, levels = arr$City)"
-"0","combined %>% na.omit() %>% ggplot(aes(City, profit, fill = Company),position = ""dodge"") + geom_col() + theme(axis.text.x=element_text(angle = 90)) + ylab(""Total Profit"")"

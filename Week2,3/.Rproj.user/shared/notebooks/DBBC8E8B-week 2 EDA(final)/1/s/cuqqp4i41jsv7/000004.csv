@@ -1,1 +1,0 @@
-"0","combined  %>% group_by(City) %>% summarise(yellow = mean(Company == ""Yellow Cab""),pink = mean(Company == ""Pink Cab"" )) %>% arrange(yellow) "

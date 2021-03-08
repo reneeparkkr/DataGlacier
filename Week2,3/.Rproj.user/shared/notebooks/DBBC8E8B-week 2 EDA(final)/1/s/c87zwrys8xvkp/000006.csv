@@ -1,3 +1,0 @@
-"0","combined %>% group_by(date,Company) %>% summarise(profits = sum(profit)) %>% na.omit() %>% ggplot(aes(date,profits, color = Company)) + geom_point(alpha = 0.2) + geom_smooth()"
-"2","`summarise()` has grouped output by 'date'. You can override using the `.groups` argument.
-"

@@ -1,1 +1,0 @@
-"0","combined %>% mutate(cost_km = combined$cost/combined$kms) %>% na.omit() %>% group_by(Company) %>% summarize(avg_cost_km = mean(cost_km))"
